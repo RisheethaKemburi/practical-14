@@ -1,0 +1,14 @@
+#include<stdio.h>
+void main(){
+	char c[1000];
+	FILE*fptr;
+	if((ifptr=fopen("ss.txt","r"))==NULL)
+	{
+		printf("error!opening file");
+		exit(1);
+	}
+	fscanf(fptr,"%[\n]",c);
+	printf("data from the file:\n%s",c);
+	fclose(fptr);
+	getch();
+}
